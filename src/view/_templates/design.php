@@ -20,7 +20,7 @@
         </nav>
 
         <div>
-            <?php require APP . 'view/'.$view.'.php'?>
+            <?php require ROOT.'src/view/'.$view.'.php'; ?>
         </div>
 
         <footer>
