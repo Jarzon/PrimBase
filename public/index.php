@@ -8,10 +8,7 @@ $start = microtime(true);
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 
 // set a constant that holds the project's "application" folder, like "/var/www/application".
-define('APP', ROOT . 'application' . DIRECTORY_SEPARATOR);
-
-// Autoloading
-require APP . 'autoload.php';
+define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
 
 // Composer autoloading
 require ROOT . 'vendor/autoload.php';
@@ -27,4 +24,4 @@ try {
     echo $error->page404($e);
 }
 
-if(ENV == 'dev') echo microtime(true) - $start;
+//if(ENV == 'dev') echo microtime(true) - $start;
