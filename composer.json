@@ -1,5 +1,5 @@
 {
-    "name": "Jarzon/PrimBase",
+    "name": "jarzon/primbase",
     "type": "project",
     "autoload": {
         "psr-4": {"PrimBase\\": "src/"}
