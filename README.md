@@ -1,3 +1,6 @@
 # Prim Base Project
 
-composer create-project jarzon/PrimBase ProjectName
+```
+composer create-project Jarzon/PrimBase ProjectName
+```
+
