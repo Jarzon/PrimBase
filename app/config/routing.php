@@ -1,2 +1,2 @@
 <?php
-$router->get('/', ['\PROJECT\Controller\Home', 'index']);
+$router->get('/', ['\PrimBase\Controller\Home', 'index']);

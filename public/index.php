@@ -1,6 +1,6 @@
 <?php
 use Prim\Core\Application;
-use PROJECT\Controller\Error;
+use PrimBase\Controller\Error;
 
 $start = microtime(true);
 

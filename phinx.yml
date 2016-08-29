@@ -7,7 +7,7 @@ environments:
     production:
         adapter: mysql
         host: localhost
-        name: PROJECT
+        name: PrimBase
         user: root
         pass: ''
         port: 3306
@@ -17,7 +17,7 @@ environments:
     development:
         adapter: mysql
         host: localhost
-        name: PROJECT
+        name: PrimBase
         user: root
         pass: ''
         port: 3306
@@ -27,7 +27,7 @@ environments:
     testing:
         adapter: mysql
         host: localhost
-        name: PROJECT
+        name: PrimBase
         user: root
         pass: ''
         port: 3306

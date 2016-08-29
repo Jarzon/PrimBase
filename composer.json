@@ -1,8 +1,11 @@
 {
-    "name": "Name/PROJECT",
+    "name": "Jarzon/PrimBase",
     "type": "project",
     "autoload": {
-        "psr-4": {"PROJECT\\": "src/"}
+        "psr-4": {"PrimBase\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Tests\\": "app/tests/"}
     },
     "require": {
         "php": ">=5.6.0",
