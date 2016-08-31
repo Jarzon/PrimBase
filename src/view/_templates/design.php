@@ -5,13 +5,13 @@
 		<title>Title</title>
 		<meta name="description" content="">
 
-		<?php if(ENV == 'prod') { ?>
+		<?php if(ENV == 'prod'): ?>
 			<?php/*Google analystic*/?>
-		<?php } ?>
+		<?php endif; ?>
 
 		<?php /*TODO: Add a if to use the non minified file when in dev env to be able to debug*/?>
-        <link rel="icon" type="image/png" href="<?=URL?>img/icon.png">
-        <link href="<?=URL?>css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="<?=URL_BASE?>/img/icon.png">
+        <link href="<?=URL_BASE?>/css/style.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -27,11 +27,7 @@
 
         </footer>
 
-        <script>
-            var url = "<?=URL?>"
-        </script>
-
         <?php /*TODO: Add a if to use the non minified file when in dev env to debug*/?>
-        <script src="<?=URL?>js/application.min.js"></script>
+        <script src="<?=URL_BASE?>/js/application.min.js"></script>
 	</body>
 </html>
