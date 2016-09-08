@@ -34,5 +34,5 @@ try {
 } catch (\Exception $e) {
     $error = new Error;
 
-    echo $error->page404($e);
+    echo $error->handleError($e);
 }
