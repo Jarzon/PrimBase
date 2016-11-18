@@ -1,5 +1,5 @@
 <?php
-use Prim\Core\Application;
+use Prim\Application;
 use PrimBase\Controller\Error;
 
 // TODO: Move all the defines in Prim

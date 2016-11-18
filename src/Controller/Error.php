@@ -1,7 +1,7 @@
 <?php
 namespace PrimBase\Controller;
 
-use Prim\Core\Controller;
+use Prim\Controller;
 
 /**
  * Errors

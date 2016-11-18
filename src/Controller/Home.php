@@ -1,8 +1,8 @@
 <?php
 namespace PrimBase\Controller;
 
-//use Prim\Core\Translate;
-use Prim\Core\Controller;
+//use Prim\Translate;
+use Prim\Controller;
 
 /**
  * Class Home
