@@ -10,8 +10,8 @@
 		<?php endif; ?>
 
 		<?php /*TODO: Add a if to use the non minified file when in dev env to be able to debug*/?>
-        <link rel="icon" type="image/png" href="<?=URL_BASE?>/img/icon.png">
-        <link href="<?=URL_BASE?>/css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/img/icon.png">
+        <link href="/css/style.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -28,6 +28,6 @@
         </footer>
 
         <?php /*TODO: Add a if to use the non minified file when in dev env to debug*/?>
-        <script src="<?=URL_BASE?>/js/application.min.js"></script>
+        <script src="/js/application.min.js"></script>
 	</body>
 </html>

@@ -6,7 +6,7 @@ $router->filter('auth', function(){
     if(!isset($_SESSION['auth'])) {
         header($_SERVER['SERVER_PROTOCOL'] . ' 403 Forbidden');
 
-        echo '403 Forbidden <a href="'.URL_BASE.'/login">Log in</a>';
+        echo '403 Forbidden <a href="/login">Log in</a>';
 
         return false;
     }
