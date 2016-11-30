@@ -16,9 +16,9 @@ class Error extends Controller
     public function handleError($e)
     {
         if($e instanceof \Phroute\Phroute\Exception\HttpRouteNotFoundException) {
-            header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
+            header(URL_PROTOCOL.' 404 Not Found');
         } else if ($e instanceof \Phroute\Phroute\Exception\HttpMethodNotAllowedException) {
-            header($_SERVER['SERVER_PROTOCOL'].' 405 Method Not Allowed');
+            header(URL_PROTOCOL.' 405 Method Not Allowed');
             header($e->getMessage());
         }
 

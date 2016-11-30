@@ -11,7 +11,7 @@ define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
 // Composer autoloading
 require ROOT . 'vendor/autoload.php';
 
-// load application config (error reporting etc.)
+// load application config
 require APP . 'config/config.php';
 
 if(ENV == 'prod') {
@@ -24,15 +24,9 @@ else {
     define('URL_BASE', $dirname);
 }
 
-define('URL_PROTOCOL', !empty($_SERVER['HTTPS'])?'https://':'http://');
+define('URL_PROTOCOL', !empty($_SERVER['HTTPS'])? 'https://': 'http://');
 define('URL_DOMAIN', $_SERVER['SERVER_NAME']);
 
 define('URL', URL_PROTOCOL . URL_DOMAIN . URL_BASE);
 
-try {
-    $app = new Application($_SERVER['REQUEST_METHOD'], URL_RELATIVE_BASE);
-} catch (\Exception $e) {
-    $error = new Error;
-
-    echo $error->handleError($e);
-}
+$app = new Application($_SERVER['REQUEST_METHOD'], URL_RELATIVE_BASE, new Error);

@@ -6,7 +6,7 @@
 		<meta name="description" content="">
 
 		<?php if(ENV == 'prod'): ?>
-			<?php/*Google analystic*/?>
+
 		<?php endif; ?>
 
 		<?php /*TODO: Add a if to use the non minified file when in dev env to be able to debug*/?>
