@@ -15,9 +15,7 @@ class Home extends Controller
      */
     public function index()
     {
-        $t = [];
-
         // load views
-        $this->design('home/index', $t);
+        $this->design('home/index');
     }
 }
