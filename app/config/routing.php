@@ -1,5 +1,4 @@
 <?php
-// TODO: Add the filter to Prim
 $router->filter('auth', function(){
     session_start();
 

@@ -1,3 +1,5 @@
 <div class="container">
-    <h1 class="alignCenter">Welcome</h1>
+    <h1 class="alignCenter">Welcome <?=$name?></h1>
+
+
 </div>
