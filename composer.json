@@ -7,9 +7,18 @@
     "autoload-dev": {
         "psr-4": {"Tests\\": "app/tests/"}
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Prim",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": ">=5.6.0",
-        "jarzon/prim": "0.2.*",
+        "jarzon/prim": "@dev",
         "robmorgan/phinx": "^0.6.4"
     },
     "require-dev": {
