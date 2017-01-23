@@ -14,19 +14,8 @@ require ROOT . 'vendor/autoload.php';
 // load application config
 require APP . 'config/config.php';
 
-if(ENV == 'prod') {
-    define('URL_RELATIVE_BASE', $_SERVER['REQUEST_URI']);
-    define('URL_BASE', '');
-}
-else {
-    $dirname = str_replace('public', '', dirname($_SERVER['SCRIPT_NAME']));
-    define('URL_RELATIVE_BASE', str_replace($dirname, '', $_SERVER['REQUEST_URI']));
-    define('URL_BASE', $dirname);
-}
+$container = new Container(array(
+    'view.class'    => 'Prim\View',
+));
 
-define('URL_PROTOCOL', !empty($_SERVER['HTTPS'])? 'https://': 'http://');
-define('URL_DOMAIN', $_SERVER['SERVER_NAME']);
-
-define('URL', URL_PROTOCOL . URL_DOMAIN . URL_BASE);
-
-$app = new Application($_SERVER['REQUEST_METHOD'], URL_RELATIVE_BASE, new Error);
+$app = new Application($container, $container->getController('PrimBase\Controller\Error'));
