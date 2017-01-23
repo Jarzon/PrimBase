@@ -9,7 +9,7 @@
     },
     "require": {
         "php": ">=5.6.0",
-        "Jarzon/Prim": "dev-master",
+        "jarzon/prim": "0.1.*",
         "robmorgan/phinx": "^0.6.4"
     },
     "require-dev": {
