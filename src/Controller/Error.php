@@ -13,13 +13,13 @@ class Error extends Controller
      * PAGE: index
      * This method handles the error page that will be shown when a page is not found
      */
-    public function handleError($e)
+    public function handleError($e, $allowedMethods = '')
     {
-        if($e instanceof \Phroute\Phroute\Exception\HttpRouteNotFoundException) {
+        if($e == 404) {
             header(URL_PROTOCOL.' 404 Not Found');
-        } else if ($e instanceof \Phroute\Phroute\Exception\HttpMethodNotAllowedException) {
+        } else if ($e == 405) {
             header(URL_PROTOCOL.' 405 Method Not Allowed');
-            header($e->getMessage());
+            header($allowedMethods);
         }
 
         $this->design('error/404');

@@ -1,7 +1,6 @@
 <?php
 namespace PrimBase\Controller;
 
-//use Prim\Translate;
 use Prim\Controller;
 use Prim\View;
 
@@ -11,7 +10,9 @@ use Prim\View;
  */
 class Home extends Controller
 {
-    public function __construct() {
+    public function __construct($view) {
+        parent::__construct($view);
+
         // Get translation file for every page in the controller
         $this->_getTranslation();
     }
