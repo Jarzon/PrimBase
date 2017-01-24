@@ -2,8 +2,6 @@
 use Prim\Application;
 use Prim\Container;
 
-// TODO: Move all the defines in Prim
-
 // Project's folder path
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);

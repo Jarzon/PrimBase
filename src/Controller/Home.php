@@ -2,7 +2,6 @@
 namespace PrimBase\Controller;
 
 use Prim\Controller;
-use Prim\View;
 
 /**
  * Class Home
@@ -13,8 +12,7 @@ class Home extends Controller
     public function __construct($view) {
         parent::__construct($view);
 
-        // Get translation file for every page in the controller
-        $this->_getTranslation();
+        // some code that apply to every pages in the controller
     }
 
     /**
