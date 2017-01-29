@@ -1,2 +1,2 @@
 <?php
-$router->addRoute('GET', '/', ['\PrimBase\Controller\Home', 'index']);
+$router->get('/', ['\PrimBase\Controller\Home', 'index']);
