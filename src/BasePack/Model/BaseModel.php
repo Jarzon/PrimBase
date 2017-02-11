@@ -1,5 +1,5 @@
 <?php
-namespace PrimBase\Model;
+namespace PrimBase\BasePack\Model;
 
 use Prim\Model;
 

@@ -1,5 +1,5 @@
 <?php
-namespace PrimBase\Controller;
+namespace PrimBase\BasePack\Controller;
 
 use Prim\Controller;
 
@@ -12,7 +12,7 @@ class Home extends Controller
     public function __construct($view) {
         parent::__construct($view);
 
-        // some code that apply to every pages in the controller
+        // $this->setTemplate('design');
     }
 
     /**

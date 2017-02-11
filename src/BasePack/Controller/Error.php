@@ -1,5 +1,5 @@
 <?php
-namespace PrimBase\Controller;
+namespace PrimBase\BasePack\Controller;
 
 use Prim\Controller;
 

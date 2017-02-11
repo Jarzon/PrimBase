@@ -16,4 +16,4 @@ $container = new Container(array(
     'view.class'    => 'Prim\View',
 ));
 
-$app = new Application($container, $container->getController('PrimBase\Controller\Error'));
+$app = new Application($container, $container->getController('PrimBase\BasePack\Controller\Error'));
