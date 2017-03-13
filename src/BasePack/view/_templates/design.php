@@ -15,7 +15,7 @@
         </nav>
 
         <main>
-            <?php require ROOT . 'src/'.$this->pack.'/view/'.$view.'.php'; ?>
+            <?php require "{$this->root}src/$packDirectory/view/$view.php"; ?>
         </main>
 
         <footer>
