@@ -1,10 +1,10 @@
 paths:
-    migrations: %%PHINX_CONFIG_DIR%%/migrations
+    migrations: %%PHINX_CONFIG_DIR%%/app/migrations
 
 environments:
     default_migration_table: phinxlog
-    default_database: development
-    production:
+    default_database: dev
+    prod:
         adapter: mysql
         host: localhost
         name: PrimBase
@@ -14,7 +14,7 @@ environments:
         charset: utf8mb4
         collation: utf8mb4_unicode_ci
 
-    development:
+    dev:
         adapter: mysql
         host: localhost
         name: PrimBase
@@ -24,7 +24,7 @@ environments:
         charset: utf8mb4
         collation: utf8mb4_unicode_ci
 
-    testing:
+    test:
         adapter: mysql
         host: localhost
         name: PrimBase
