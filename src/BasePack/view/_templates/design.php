@@ -22,6 +22,6 @@
 
         </footer>
 
-        <script src="/js/application.min.js"></script>
+        <script src="/js/main.js"></script>
 	</body>
 </html>
