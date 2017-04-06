@@ -6,7 +6,7 @@
 		<meta name="description" content="">
 
         <link rel="icon" type="image/png" href="/img/icon.png">
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
 	</head>
 	<body>
 
