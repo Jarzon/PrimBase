@@ -46,17 +46,10 @@ gulp.task('css-build', function() {
 gulp.task('img-build', function() {
     var tasks = config.img.files.map(function(file) {
         return gulp.src(file[0])
-            .pipe(concat(file[1]))
+            .pipe(rename(function (path) {
+                path.dirname = file[1];
+            }))
             .pipe(gulp.dest(config.img.destination));
-    });
-
-    return es.concat.apply(null, tasks);
-});
-
-gulp.task('copy', function() {
-    var tasks = config.copy.files.map(function(file) {
-        return gulp.src(file)
-            .pipe(gulp.dest(config.copy.destination));
     });
 
     return es.concat.apply(null, tasks);
