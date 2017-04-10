@@ -17,10 +17,8 @@ gulp.task('img-clean', function () {
     return del(['public/img/*']);
 });
 
-gulp.task('watch', function() {
-    gulp.watch('src/**/assets/js/*.js', ['js-clean', 'js-build']);
-    gulp.watch('src/**/assets/css/*.css', ['css-clean', 'css-build']);
-    gulp.watch('src/**/assets/img/*', ['img-clean', 'img-build']);
+gulp.task('msg-clean', function () {
+    return del(['app/config/messages.json']);
 });
 
 gulp.task('js-build', function() {
@@ -53,6 +51,19 @@ gulp.task('img-build', function() {
     });
 
     return es.concat.apply(null, tasks);
+});
+
+gulp.task('msg-build', function() {
+    gulp.src('src/**/config/messages.json')
+        .pipe(merge({fileName: 'messages.json', jsonSpace: ''}))
+        .pipe(gulp.dest('app/config/'));
+});
+
+gulp.task('watch', function() {
+    gulp.watch('src/**/assets/js/*.js', ['js-clean', 'js-build']);
+    gulp.watch('src/**/assets/css/*.css', ['css-clean', 'css-build']);
+    gulp.watch('src/**/assets/img/*', ['img-clean', 'img-build']);
+    gulp.watch('src/**/config/messages.json', ['msg-clean', 'msg-build']);
 });
 
 gulp.task('default', ['watch'], function(){});
