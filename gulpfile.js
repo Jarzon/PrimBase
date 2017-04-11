@@ -2,6 +2,7 @@ var es = require('event-stream');
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
+var merge = require('gulp-merge-json');
 var del = require('del');
 var config = require('./app/config/assets.json');
 
