@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+/bin
+public/img/
+public/js/
+public/css/
+app/config/config.php
