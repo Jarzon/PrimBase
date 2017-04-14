@@ -5,3 +5,4 @@ public/img/
 public/js/
 public/css/
 app/config/config.php
+app/config/messages.json
