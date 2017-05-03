@@ -12,8 +12,6 @@ require ROOT . 'vendor/autoload.php';
 // load application config
 require APP . 'config/config.php';
 
-$container = new Container([
-    'view.class'    => 'Prim\View',
-]);
+$container = new Container(include(APP . '/config/container.php'));
 
 $app = new Application($container, $container->getController('PrimBase\BasePack\Controller\Error'));
