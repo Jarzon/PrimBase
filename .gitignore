@@ -6,3 +6,5 @@ public/js/
 public/css/
 app/config/config.php
 app/config/messages.json
+app/deploy/config.sh
+/phinx.yml
