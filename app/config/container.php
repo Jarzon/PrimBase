@@ -1,4 +1,4 @@
 <?php
 return [
-    'view.class'    => 'Prim\View',
+    'view.class'    => 'PrimBase\BasePack\Service\View',
 ];
