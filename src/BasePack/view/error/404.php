@@ -1,3 +1,3 @@
-<h1 class="alignCenter">Page not found</h1>
+<h1><?=$_('page not found')?></h1>
 
-<p>We didn't found requested URL : <?=$_SERVER['REQUEST_URI']?></p>
+<p><?=$_('url not found')?><?=$_SERVER['REQUEST_URI']?></p>

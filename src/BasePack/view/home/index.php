@@ -1,2 +1,2 @@
-<h1 class="alignCenter"><?=$_('Welcome')?> <?=$name?></h1>
+<h1><?=$_('Welcome')?> <?=$name?></h1>
 

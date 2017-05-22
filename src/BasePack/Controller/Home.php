@@ -10,12 +10,6 @@ use PrimBase\BasePack\Model\BaseModel;
  */
 class Home extends Controller
 {
-    public function __construct($view) {
-        parent::__construct($view);
-
-        // $this->setTemplate('design');
-    }
-
     /**
      * PAGE: index
      */
