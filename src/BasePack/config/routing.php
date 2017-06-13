@@ -1,2 +1,2 @@
 <?php
-$this->get('/', '\PrimBase\BasePack\Controller\Home', 'index');
+$this->get('/', 'BasePack\Home', 'index');

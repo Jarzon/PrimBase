@@ -22,6 +22,6 @@ class Error extends Controller
             header($allowedMethods);
         }
 
-        $this->design('error/404');
+        $this->render('error/404');
     }
 }
