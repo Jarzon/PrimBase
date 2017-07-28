@@ -5,7 +5,7 @@ class View extends \Prim\View
 {
     use \PrimUtilities\Localization;
 
-    function __construct() {
+    function buildBase() {
         $this->setLanguage('en');
     }
 }
