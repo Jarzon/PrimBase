@@ -21,6 +21,6 @@
     "files": {
       "": ["src/*/assets/files/*.*"]
     },
-    "destination": "public/img"
+    "destination": "public/files"
   }
 }
