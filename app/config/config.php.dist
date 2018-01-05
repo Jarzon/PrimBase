@@ -15,3 +15,15 @@ define('DB_CHARSET', 'utf8');
  * Environment
  */
 define('ENV', 'dev');
+
+if(ENV === 'dev') {
+    define('DEBUG', true);
+} else {
+    define('DEBUG', false);
+}
+
+/**
+ * Error handling
+ */
+define('ERROR_MAIL', 'mail@exemple.com');
+define('ERROR_MAIL_FROM', 'Prim');
