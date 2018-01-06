@@ -1,17 +1,3 @@
-<?php
-function formatBytes($bytes, $precision = 2) {
-    $units = array('B', 'KB', 'MB', 'GB', 'TB');
-
-    $bytes = max($bytes, 0);
-    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
-    $pow = min($pow, count($units) - 1);
-
-    // Uncomment one of the following alternatives
-    $bytes /= pow(1024, $pow);
-
-    return round($bytes, $precision) . ' ' . $units[$pow];
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,28 +15,6 @@ function formatBytes($bytes, $precision = 2) {
                 height: 75px;
                 background: #333;
                 padding: 0 15%;
-            }
-
-            footer {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                font-size: 20px;
-                height: 75px;
-                background: #333;
-                padding: 0 15%;
-            }
-
-            ul {
-                list-style: none;
-            }
-
-            ul li {
-                display: block;
-                text-align: center;
-                width: 200px;
-                float: left;
             }
 
             main {
@@ -93,13 +57,6 @@ function formatBytes($bytes, $precision = 2) {
             <?= $this->section('default') ?>
         </main>
 
-        <footer>
-            <?php if($xdebug): ?>
-            <ul>
-                <li>Time:<br> <?=floor(xdebug_time_index() * 1000)?> ms</li>
-                <li>Memory:<br> <?=formatBytes(xdebug_memory_usage())?> / <?=formatBytes(xdebug_peak_memory_usage())?></li>
-            </ul>
-            <?php endif; ?>
-        </footer>
+        <?php $this->toolbar(); ?>
     </body>
 </html>
