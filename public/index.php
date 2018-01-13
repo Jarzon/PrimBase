@@ -1,5 +1,4 @@
 <?php
-use Prim\Application;
 use Prim\Container;
 
 // Project's folder path
@@ -14,4 +13,4 @@ require APP . 'config/config.php';
 
 $container = new Container(include(APP . '/config/container.php'));
 
-$app = new Application($container);
+$container->getApplication();
