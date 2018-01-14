@@ -1,5 +1,5 @@
 <?php
-use Prim\Container;
+use PrimBase\BasePack\Service\Container;
 
 // Project's folder path
 define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
