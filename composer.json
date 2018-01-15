@@ -6,7 +6,8 @@
   },
   "config": {
     "bin-dir": "bin",
-    "discard-changes": true
+    "discard-changes": true,
+    "optimize-autoloader": true
   },
   "require": {
     "php": ">=7.0.0",
