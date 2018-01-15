@@ -1,8 +1,13 @@
 <?php
 namespace PrimBase\BasePack\Service;
 
+use PrimPack\Container\Toolbar;
+use PrimUtilities\Container\Localization;
+
 class Container extends \Prim\Container
 {
+    use Localization, Toolbar;
+
     /**
      * Use this Class to add Services to the container
      */
@@ -17,7 +22,7 @@ class Container extends \Prim\Container
         //You can inject Services into the Controller like so:
         // return $this->init($obj, $this->getView(), $this, $this->getService());
 
-        return $this->init($obj, $this->getView(), $this);
+        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService(), $this->getToolbarService());
     }
 
     /**
@@ -27,6 +32,6 @@ class Container extends \Prim\Container
     {
         $obj = 'errorController';
 
-        return $this->init($obj, $this->getView(), $this);
+        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService(), $this->getToolbarService());
     }
 }
