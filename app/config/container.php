@@ -1,5 +1,5 @@
 <?php
 return [
-    'pdo.class'             => '\PDO',
+    'pdo.class'             => 'PrimPack\Service\PDO',
     'errorController.class' => 'PrimPack\Controller\Error'
 ];
