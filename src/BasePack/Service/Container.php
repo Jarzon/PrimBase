@@ -32,6 +32,6 @@ class Container extends \Prim\Container
     {
         $obj = 'errorController';
 
-        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService(), $this->getToolbarService());
+        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService());
     }
 }

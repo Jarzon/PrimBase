@@ -25,5 +25,7 @@
 
         <script src="/js/main.js"></script>
         <?= $this->section('js') ?>
+
+        <?=(isset($_getToolbar) AND $this->insert('toolbar', 'PrimPack'))?>
 	</body>
 </html>
