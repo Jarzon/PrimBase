@@ -10,6 +10,9 @@
     "url": "https://github.com/Jarzon/PrimBase/issues"
   },
   "homepage": "https://github.com/Jarzon/PrimBase#readme",
+  "scripts": {
+    "update": "npm update"
+  },
   "dependencies": {
 
   },
