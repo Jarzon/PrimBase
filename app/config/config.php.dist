@@ -1,29 +1,21 @@
 <?php
+return [
+    'project_name' => 'PrimBase',
 
-/**
- * Database config
- */
-define('DB_ENABLE', true);
-define('DB_TYPE', 'mysql');
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'PrimBase');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_CHARSET', 'utf8');
+    'db_enable' => true,
+    'db_type' => 'mysql',
+    'db_host' => '127.0.0.1',
+    'db_name' => 'primbase',
+    'db_user' => 'root',
+    'db_password' => '',
+    'db_charset' => 'utf8',
 
-/**
- * Environment
- */
-define('ENV', 'dev');
+    'environment' => 'dev',
+    'debug' => true,
 
-if(ENV === 'dev') {
-    define('DEBUG', true);
-} else {
-    define('DEBUG', false);
-}
+    'error_mail' => 'errors@example.com',
+    'error_mail_from' => 'PrimBase <errors@example.com>',
 
-/**
- * Error handling
- */
-define('ERROR_MAIL', 'mail@exemple.com');
-define('ERROR_MAIL_FROM', 'Prim');
+    'url_protocol' => !empty($_SERVER['HTTPS'])? 'https://': 'http://',
+    'url_domain' => $_SERVER['SERVER_NAME']
+];
