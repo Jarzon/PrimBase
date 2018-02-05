@@ -1,16 +1,18 @@
 <?php
 use PrimBase\BasePack\Service\Container;
 
-// Project's folder path
-define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
-define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
+$root = dirname(__DIR__) . DIRECTORY_SEPARATOR;
+
+$config = [
+    'root' => $root,
+    'app' => "{$root}app/"
+];
 
 // Composer autoloading
-require ROOT . 'vendor/autoload.php';
+require "{$config['root']}vendor/autoload.php";
 
-// load application config
-require APP . 'config/config.php';
+$config = (include("{$config['app']}config/config.php")) + $config;
 
-$container = new Container(include(APP . '/config/container.php'));
+$container = new Container(include("{$config['app']}/config/container.php"), $config);
 
 $container->getApplication();
