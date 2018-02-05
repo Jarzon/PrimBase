@@ -9,6 +9,11 @@ return [
     'db_user' => 'root',
     'db_password' => '',
     'db_charset' => 'utf8',
+    'db_options' => [
+        PDO::ATTR_EMULATE_PREPARES => false,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+        PDO::ATTR_ORACLE_NULLS => PDO::NULL_TO_STRING
+    ],
 
     'environment' => 'dev',
     'debug' => true,
