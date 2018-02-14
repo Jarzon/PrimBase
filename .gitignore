@@ -1,6 +1,8 @@
 /vendor
 /node_modules
 /bin
+/data/*
+!/data/.gitkeep
 public/img/
 public/js/
 public/css/
