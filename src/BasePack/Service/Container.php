@@ -22,7 +22,7 @@ class Container extends \Prim\Container
         //You can inject Services into the Controller like so:
         // return $this->init($obj, $this->getView(), $this, $this->getService());
 
-        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService(), $this->getToolbarService());
+        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService(), $this->getToolbarService());
     }
 
     /**
@@ -32,6 +32,6 @@ class Container extends \Prim\Container
     {
         $obj = 'errorController';
 
-        return $this->init($obj, $this->getView(), $this, $this->getLocalizationService());
+        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService());
     }
 }
