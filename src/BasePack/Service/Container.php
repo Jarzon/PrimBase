@@ -2,7 +2,7 @@
 namespace PrimBase\BasePack\Service;
 
 use PrimPack\Container\Toolbar;
-use PrimUtilities\Container\Localization;
+use Jarzon\Container\Localization;
 
 class Container extends \Prim\Container
 {
@@ -15,7 +15,7 @@ class Container extends \Prim\Container
     /**
      * @return \Prim\Controller
      */
-    public function getController(string $obj)
+    public function getController(string $obj) : object
     {
         $this->parameters["$obj.class"] = $obj;
 
@@ -28,7 +28,7 @@ class Container extends \Prim\Container
     /**
      * @return \Prim\Controller
      */
-    public function getErrorController()
+    public function getErrorController() : object
     {
         $obj = 'errorController';
 
