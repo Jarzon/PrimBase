@@ -3,21 +3,15 @@ namespace PrimBase\BasePack\Controller;
 
 use Prim\Controller;
 
-/**
- * Class Home
- *
- */
 class Home extends Controller
 {
-    /**
-     * PAGE: index
-     */
     public function index()
     {
-        $model = $this->getModel('BaseModel');
+        /** @var \PrimBase\BasePack\Model\BaseModel $model */
+        // $model = $this->getModel('BaseModel');
 
-        $this->addVar('name', 'anonymous');
-
-        $this->render('home/index');
+        $this->render('home/index', 'BasePack', [
+            'viewVariable' => ''
+        ]);
     }
 }
