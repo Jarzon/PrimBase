@@ -12,12 +12,11 @@
   "homepage": "https://github.com/Jarzon/PrimBase#readme",
   "scripts": {
     "update": "npm update",
-    "gulp": "./node_modules/.bin/gulp"
+    "composer update": "node -r \"fs\" -e \"fs.closeSync(fs.openSync('./.stop.primgulp', 'w'))\" && composer update && gulp",
+    "gulp": "gulp"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-    "primgulp": "^0.8.5"
+    "primgulp": "^0.8.6"
   }
 }
