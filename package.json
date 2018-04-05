@@ -11,7 +11,8 @@
   },
   "homepage": "https://github.com/Jarzon/PrimBase#readme",
   "scripts": {
-    "update": "npm update"
+    "update": "npm update",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "dependencies": {
 
