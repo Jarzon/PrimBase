@@ -4,23 +4,34 @@
   "autoload": {
     "psr-4": {"PrimBase\\": "src/"}
   },
-  "post-install-cmd": [
-    "npm install"
-  ],
+  "scripts": {
+    "post-install-cmd": [
+      "SlowProg\\CopyFile\\ScriptHandler::copy",
+      "npm install"
+    ]
+  },
   "config": {
     "bin-dir": "bin",
     "discard-changes": true,
     "optimize-autoloader": true
   },
   "require": {
-    "php": ">=7.0.0",
+    "php": ">=7.2.0",
     "jarzon/prim": "~0.12.0",
     "jarzon/localization": "~0.1.0",
     "jarzon/primpack": "~0.5.0",
-    "robmorgan/phinx": "^0.6.4"
+    "robmorgan/phinx": "^0.6.4",
+
+    "slowprog/composer-copy-file": "~0.2"
   },
   "require-dev": {
     "phpunit/phpunit": "6.2.*",
     "phpunit/dbunit": ">=1.2"
+  },
+  "extra": {
+    "copy-file": {
+      "app/config/config.php.dist": "app/config/config.php",
+      "phinx.yml.dist": "phinx.yml"
+    }
   }
 }
