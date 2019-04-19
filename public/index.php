@@ -1,5 +1,5 @@
 <?php
-use PrimBase\BasePack\Service\Container;
+use Prim\Container;
 
 $root = dirname(__DIR__) . DIRECTORY_SEPARATOR;
 
@@ -13,6 +13,6 @@ require "{$config['root']}vendor/autoload.php";
 
 $config = (include("{$config['app']}config/config.php")) + $config;
 
-$container = new Container(include("{$config['app']}/config/container.php"), $config, include("{$config['app']}config/services.php"));
+$container = new Container($config);
 
-$container->getApplication();
+$container->get('application');
