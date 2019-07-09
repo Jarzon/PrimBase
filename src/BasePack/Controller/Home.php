@@ -3,20 +3,21 @@ namespace PrimBase\BasePack\Controller;
 
 use Prim\Controller;
 
+use \PrimBase\BasePack\Model\BaseModel;
+
 class Home extends Controller
 {
-    public function __construct($view, array $options = [])
+    public $baseModel;
+
+    public function __construct($view, array $options = [], BaseModel $basemodel)
     {
         parent::__construct($view, $options);
 
-
+        $this->baseModel = $basemodel;
     }
 
     public function index()
     {
-        /** @var \PrimBase\BasePack\Model\BaseModel $model */
-        // $model = $this->getModel('BaseModel');
-
         $this->render('home/index', 'BasePack', [
             'viewVariable' => ''
         ]);

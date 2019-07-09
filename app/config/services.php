@@ -1,5 +1,3 @@
 <?php
-/**
- * @var $this \Prim\Service
- */
+/** @var $this \Prim\Service */
 $this->getServices('BasePack');
