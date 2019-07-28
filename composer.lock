@@ -88,16 +88,16 @@
         },
         {
             "name": "jarzon/primconsole",
-            "version": "v0.3.2",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimConsole.git",
-                "reference": "359421cda7e8968a72802d14ef75681643e10e26"
+                "reference": "f06e75b8785d5de49395db3820ff8e628e5aac12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimConsole/zipball/359421cda7e8968a72802d14ef75681643e10e26",
-                "reference": "359421cda7e8968a72802d14ef75681643e10e26",
+                "url": "https://api.github.com/repos/Jarzon/PrimConsole/zipball/f06e75b8785d5de49395db3820ff8e628e5aac12",
+                "reference": "f06e75b8785d5de49395db3820ff8e628e5aac12",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-07-28T20:10:58+00:00"
+            "time": "2019-07-28T20:42:38+00:00"
         },
         {
             "name": "jarzon/primpack",
