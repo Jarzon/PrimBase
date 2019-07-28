@@ -6,7 +6,7 @@
   },
   "scripts": {
     "post-create-project-cmd": [
-      "Prim\\Console\\CreateProject::postCreateProject",
+      "PrimBase\\CreateProject::postCreateProject",
       "npm install"
     ],
     "clearCache": "rm -rf app/cache/*",
