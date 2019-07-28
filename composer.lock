@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bdcdb99d688cf002be6d4b5702a0efb",
+    "content-hash": "9ea58e98285e54899c5c4aec5ee49f82",
     "packages": [
         {
             "name": "jarzon/localization",
@@ -88,20 +88,20 @@
         },
         {
             "name": "jarzon/primconsole",
-            "version": "v0.3.0",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimConsole.git",
-                "reference": "0dfd9aa001f877277918e622a681529a892146a0"
+                "reference": "359421cda7e8968a72802d14ef75681643e10e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimConsole/zipball/0dfd9aa001f877277918e622a681529a892146a0",
-                "reference": "0dfd9aa001f877277918e622a681529a892146a0",
+                "url": "https://api.github.com/repos/Jarzon/PrimConsole/zipball/359421cda7e8968a72802d14ef75681643e10e26",
+                "reference": "359421cda7e8968a72802d14ef75681643e10e26",
                 "shasum": ""
             },
             "require": {
-                "jarzon/prim": "~0.14.0",
+                "jarzon/prim": ">=0.14.0",
                 "php": ">=7.2.0"
             },
             "require-dev": {
@@ -116,20 +116,20 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-04-19T01:27:04+00:00"
+            "time": "2019-07-28T20:10:58+00:00"
         },
         {
             "name": "jarzon/primpack",
-            "version": "v0.9.2",
+            "version": "v0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimPack.git",
-                "reference": "e574ec358ac075bbbbabfa975b430248535c086b"
+                "reference": "772f99d63964bb4f4485b00b9417cf6b99fa6cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/e574ec358ac075bbbbabfa975b430248535c086b",
-                "reference": "e574ec358ac075bbbbabfa975b430248535c086b",
+                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/772f99d63964bb4f4485b00b9417cf6b99fa6cc8",
+                "reference": "772f99d63964bb4f4485b00b9417cf6b99fa6cc8",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +148,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-06-25T02:56:16+00:00"
+            "time": "2019-07-12T15:57:12+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -314,54 +314,6 @@
             "time": "2017-12-23T06:48:51+00:00"
         },
         {
-            "name": "slowprog/composer-copy-file",
-            "version": "0.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/slowprog/CopyFile.git",
-                "reference": "5a82ba4613948f70b2d4b041c13c1c9259fc6477"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/slowprog/CopyFile/zipball/5a82ba4613948f70b2d4b041c13c1c9259fc6477",
-                "reference": "5a82ba4613948f70b2d4b041c13c1c9259fc6477",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "mikey179/vfsstream": "~1",
-                "php-mock/php-mock-phpunit": "~1",
-                "phpunit/phpunit": "5.7.27",
-                "symfony/filesystem": "~2.7",
-                "symfony/finder": "~2.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SlowProg\\CopyFile\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrey Tyshev",
-                    "email": "slowprog@gmail.com"
-                }
-            ],
-            "description": "Composer script copying your files after install",
-            "homepage": "https://github.com/SlowProg/composer-copy-file",
-            "keywords": [
-                "copy file"
-            ],
-            "time": "2019-01-10T05:06:10+00:00"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.12",
             "source": {
@@ -417,16 +369,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.3.2",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "9198eea354be75794a7b1064de00d9ae9ae5090f"
+                "reference": "a17a2aea43950ce83a0603ed301bac362eb86870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/9198eea354be75794a7b1064de00d9ae9ae5090f",
-                "reference": "9198eea354be75794a7b1064de00d9ae9ae5090f",
+                "url": "https://api.github.com/repos/symfony/config/zipball/a17a2aea43950ce83a0603ed301bac362eb86870",
+                "reference": "a17a2aea43950ce83a0603ed301bac362eb86870",
                 "shasum": ""
             },
             "require": {
@@ -477,20 +429,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-08T06:33:08+00:00"
+            "time": "2019-07-18T10:34:59+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.3.2",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "b592b26a24265a35172d8a2094d8b10f22b7cc39"
+                "reference": "8b0ae5742ce9aaa8b0075665862c1ca397d1c1d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/b592b26a24265a35172d8a2094d8b10f22b7cc39",
-                "reference": "b592b26a24265a35172d8a2094d8b10f22b7cc39",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8b0ae5742ce9aaa8b0075665862c1ca397d1c1d9",
+                "reference": "8b0ae5742ce9aaa8b0075665862c1ca397d1c1d9",
                 "shasum": ""
             },
             "require": {
@@ -552,11 +504,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-13T11:03:18+00:00"
+            "time": "2019-07-24T17:13:59+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.3.2",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -839,16 +791,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.3.2",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99"
+                "reference": "34d29c2acd1ad65688f58452fd48a46bd996d5a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c60ecf5ba842324433b46f58dc7afc4487dbab99",
-                "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/34d29c2acd1ad65688f58452fd48a46bd996d5a6",
+                "reference": "34d29c2acd1ad65688f58452fd48a46bd996d5a6",
                 "shasum": ""
             },
             "require": {
@@ -894,7 +846,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-04-06T14:04:46+00:00"
+            "time": "2019-07-24T14:47:54+00:00"
         }
     ],
     "packages-dev": [
