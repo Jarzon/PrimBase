@@ -1,5 +1,5 @@
 <?php
 /** @var $this \Prim\View */
 $this->start('default') ?>
-    <h1><?=$_('Welcome')?> <?=$name?></h1>
+    <h1><?='Welcome'?></h1>
 <?php $this->end() ?>
