@@ -19,9 +19,6 @@ return [
         return [];
     },
 
-    Home::class => function(Container $dic) {
-        return [
-            $dic->model('BasePack\BaseModel'),
-        ];
-    },
+    PrimPack\Controller\Error::class => fn(Container $dic) => [$dic],
+    Home::class => fn(Container $dic) => [],
 ];
