@@ -1,3 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /** @var $this \Prim\Router */
-$this->getRoutes('BasePack', 'routing.php');
+
+$this->registerRoutes('BasePack', 'routing.php');

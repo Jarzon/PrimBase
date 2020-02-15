@@ -1,13 +1,13 @@
-<?php
+<?php declare(strict_types=1);
 namespace PrimBase\BasePack\Controller;
 
-use Prim\Controller;
+use Prim\AbstractController;
 
 use \PrimBase\BasePack\Model\BaseModel;
 
-class Home extends Controller
+class Home extends AbstractController
 {
-    public $baseModel;
+    public BaseModel $baseModel;
 
     public function __construct($view, array $options = [], BaseModel $basemodel)
     {

@@ -1,3 +1,10 @@
+<?php declare(strict_types=1);
+/**
+ * @var $this \Prim\View
+ * @var $_ callable
+ * @var $e callable
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,7 +13,7 @@
 		<meta name="description" content="">
 
         <link rel="icon" type="image/png" href="/img/icon.png">
-        <link href="/css/main.css" rel="stylesheet">
+        <link href="<?=$this->fileCache('/js/main.css')?>" rel="stylesheet">
         <?= $this->section('css') ?>
 	</head>
 	<body>
@@ -23,7 +30,7 @@
 
         </footer>
 
-        <script src="/js/main.js"></script>
+        <script src="<?=$this->fileCache('/js/main.js')?>" defer></script>
         <?= $this->section('js') ?>
 
         <?=(isset($_getToolbar) AND $this->insert('toolbar', 'PrimPack'))?>

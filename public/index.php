@@ -1,5 +1,7 @@
-<?php
+<?php declare(strict_types=1);
 use Prim\Container;
+
+session_start();
 
 $root = dirname(__DIR__) . DIRECTORY_SEPARATOR;
 
@@ -15,4 +17,10 @@ $config = (include("{$config['app']}config/config.php")) + $config;
 
 $container = new Container($config);
 
+ob_start(function ($buffer) {
+    return preg_replace('~^([ \t\n]+)~m', '', $buffer);
+});
 $container->get('application');
+ob_end_flush();
+flush();
+session_write_close();

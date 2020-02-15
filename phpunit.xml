@@ -23,6 +23,9 @@
             <directory>src/</directory>
             <exclude>
                 <directory>src/*Pack/assets</directory>
+                <directory>src/*Pack/config</directory>
+                <directory>src/*Pack/phinx</directory>
+                <directory>src/*Pack/view</directory>
             </exclude>
         </whitelist>
     </filter>

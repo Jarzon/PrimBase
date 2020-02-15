@@ -1,6 +1,8 @@
 <?php
+$name = 'PrimBase';
+
 return [
-    'project_name' => 'PrimBase',
+    'project_name' => $name,
 
     'db_enable' => true,
     'db_type' => 'mysql',
@@ -8,19 +10,37 @@ return [
     'db_name' => 'primbase',
     'db_user' => 'root',
     'db_password' => '',
-    'db_charset' => 'utf8',
+    'db_charset' => 'utf8mb4',
     'db_options' => [
         PDO::ATTR_EMULATE_PREPARES => false,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_ORACLE_NULLS => PDO::NULL_TO_STRING
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ],
 
     'environment' => 'dev',
     'debug' => true,
+    'router_query_string' => true,
 
-    'error_mail' => 'errors@example.com',
-    'error_mail_from' => 'PrimBase <errors@example.com>',
+    'email' => "contact@example.com",
+    'email_name' => $name,
+
+    'smtp_url' => "mail.example.com",
+    'smtp_port' => 587,
+    'smtp_secure' => 'tls',
+    'smtp_email' => "postmaster@example.com",
+    'smtp_password' => "",
 
     'url_protocol' => !empty($_SERVER['HTTPS'])? 'https://': 'http://',
-    'url_domain' => $_SERVER['SERVER_NAME']
+    'url_domain' => $_SERVER['SERVER_NAME'],
+
+    'isMobile' => isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') || strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') || strpos($_SERVER['HTTP_USER_AGENT'], 'iPad')) !== false,
+
+    'password' => [
+        'algo' => PASSWORD_ARGON2ID,
+        'options' => [
+            'memory_cost' => 16384,
+            'time_cost' => 9,
+            'threads' => 1
+        ]
+    ],
 ];

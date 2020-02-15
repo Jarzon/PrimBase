@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 use Prim\Container;
 
 use PrimBase\BasePack\Controller\Home;
