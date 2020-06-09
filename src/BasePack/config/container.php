@@ -11,6 +11,9 @@ $this
 // Register a service
 // $this->register('service', PrimBase\BasePack\Service\Service::class, [$this]);
 
+
+// $this->get('userService')->init();
+
 if ($this->options['debug']) {
     $this->get('toolbarService')->addElement('Stats', function () {
         return ': ' . count($this->get('localizationService')->messages) . ' messages - ' . $this->get('router')->getRoutesCount() . ' routes ';
