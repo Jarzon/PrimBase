@@ -13,8 +13,6 @@ $config = [
 // Composer autoloading
 require "{$config['root']}vendor/autoload.php";
 
-$config = (include("{$config['app']}config/config.php")) + $config;
-
 $container = new Container($config);
 
 ob_start(function ($buffer) {
