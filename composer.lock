@@ -585,16 +585,16 @@
         },
         {
             "name": "jarzon/primpack",
-            "version": "v1.16.6",
+            "version": "v1.16.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimPack.git",
-                "reference": "e00be25de2585c3bc4cf18c1d292ae5255a353ae"
+                "reference": "26bff948d74fc0e432863357a04442f10974cefa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/e00be25de2585c3bc4cf18c1d292ae5255a353ae",
-                "reference": "e00be25de2585c3bc4cf18c1d292ae5255a353ae",
+                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/26bff948d74fc0e432863357a04442f10974cefa",
+                "reference": "26bff948d74fc0e432863357a04442f10974cefa",
                 "shasum": ""
             },
             "require": {
@@ -616,9 +616,9 @@
             "description": "Helper Pack base for Prim projects",
             "support": {
                 "issues": "https://github.com/Jarzon/PrimPack/issues",
-                "source": "https://github.com/Jarzon/PrimPack/tree/v1.16.6"
+                "source": "https://github.com/Jarzon/PrimPack/tree/v1.16.7"
             },
-            "time": "2022-05-04T23:20:08+00:00"
+            "time": "2022-05-24T03:25:19+00:00"
         },
         {
             "name": "jarzon/querybuilder",

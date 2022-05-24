@@ -20,5 +20,5 @@ return [
     },
 
     PrimPack\Controller\Error::class => fn(Container $dic) => [$dic],
-    Home::class => fn(Container $dic) => [],
+    Home::class => fn(Container $dic) => [$dic->model('BasePack\BaseModel')],
 ];
