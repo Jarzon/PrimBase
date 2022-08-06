@@ -5,13 +5,17 @@
     "psr-4": {"PrimBase\\": "src/"}
   },
   "scripts": {
+    "pre-update-cmd": "[ $COMPOSER_DEV_MODE -eq 0 ] || npm run gulpstop",
+    "post-install-cmd": "PrimPack\\Command\\RootPackageVersion::save",
+    "post-update-cmd": [
+      "PrimPack\\Command\\RootPackageVersion::save",
+      "[ $COMPOSER_DEV_MODE -eq 0 ] || npm run gulprestart"
+    ],
     "post-create-project-cmd": [
       "Prim\\Console\\CreateProject::postCreateProject",
       "npm install"
     ],
-    "clearCache": "rm -rf app/cache/*",
-    "pre-update-cmd": "npm run gulpstop",
-    "post-update-cmd": "npm run gulprestart"
+    "clearCache": "rm -rf app/cache/*"
   },
   "config": {
     "bin-dir": "bin",
@@ -23,17 +27,18 @@
     "php": ">=8.1.0",
     "ext-pdo": "*",
 
-    "jarzon/prim": "~0.19.0",
+    "jarzon/prim": "~0.20.0",
     "jarzon/primconsole": "~0.4.0",
-    "jarzon/primpack": "~v1.16.6",
+    "jarzon/primpack": "~1.16.6",
+    "symfony/yaml": "^5.0",
     "robmorgan/phinx": "~0.12.10",
 
     "jarzon/form": "~1.9.30",
-    "jarzon/pagination": "~0.2.1",
     "jarzon/localization": "~0.3.0",
-    "jarzon/querybuilder": "~v0.7.19",
+    "jarzon/querybuilder": "~0.7.19",
 
-    "jarzon/userpack": "~v0.19.3"
+    "jarzon/paginationpack": "~0.4.0",
+    "jarzon/userpack": "~0.19.3"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.7.0"
