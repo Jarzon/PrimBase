@@ -19,6 +19,7 @@ return [
         return [];
     },
 
+    PrimPack\Service\Logger::class => fn(Container $dic) => [[]],
     PrimPack\Controller\Error::class => fn(Container $dic) => [$dic->service('PrimPack\Logger'), $dic],
     Home::class => fn(Container $dic) => [$dic->model('BasePack\BaseModel')],
 ];
