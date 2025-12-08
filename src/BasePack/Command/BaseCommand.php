@@ -12,8 +12,8 @@ class BaseCommand extends Command
         array $options,
         Input $input,
         Output $output,
-        protected BaseModel $baseModel)
-    {
+        protected BaseModel $baseModel
+    ) {
         parent::__construct($options, $input, $output);
 
         $this

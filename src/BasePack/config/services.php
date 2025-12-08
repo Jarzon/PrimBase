@@ -10,7 +10,7 @@ return [
 
         $localization = $dic->get('localizationService');
 
-        $localization->setLanguage('fr');
+        $localization->setLanguage('en');
 
         $view->registerFunction('getLanguage', function() use ($localization) {
             return $localization->language;
