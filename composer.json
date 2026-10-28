@@ -3,7 +3,7 @@
   "type": "project",
   "autoload": {
     "psr-4": {"PrimBase\\": "src/"},
-    "exclude-from-classmap": ["/src/*/phinx/"]
+    "exclude-from-classmap": ["/src/*/phinx/", "/src/*/tests/"]
   },
   "scripts": {
     "pre-update-cmd": "[ $COMPOSER_DEV_MODE -eq 0 ] || npm run gulpstop",
@@ -48,7 +48,7 @@
     "phpstan/phpstan": "^2.1.0",
     "phpstan/extension-installer": "^1.4.0",
     "phpstan/phpstan-deprecation-rules": "^2.0.0",
-    "phpunit/phpunit": "~12.4.0",
-    "brianium/paratest": "^7.14"
+    "phpunit/phpunit": "~13.4.5",
+    "brianium/paratest": "^7.27"
   }
 }
